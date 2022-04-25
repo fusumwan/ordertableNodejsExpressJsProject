@@ -1,2 +1,3 @@
-# ordertable
-# ordertable
+This website shows a web design solution for many websites is to provide different web pages for different devices, such as a mobile version or an iPhone/iPad version. This ensures the effect, but it is cumbersome, and several versions are maintained, and if a website has multiple portals, it will greatly increase the complexity of the architecture design. 
+ 
+Consequently, I have decided that I can be designed once, universally applicable, so that the same web page automatically adapts to different screen sizes, automatically adjust the layout according to the width of the screen. The CSS can refer to a web design that automatically recognizes the width of the screen and adjusts accordingly.  If the screen width is greater than 768 pixels, then 4 buttons in the menu are lined up side by side. If the screen width is lower than 768 then the menu button in the right-hand corner will be showing for dropping down a menu list.  

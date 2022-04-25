@@ -1,7 +1,9 @@
-This is a installation guide
+# This is a installation guide
 
 
-//////// clone the source code of OrderTable ////////
+# Clone the source code of OrderTable 
+
+
 git clone https://github.com/fusumwan/ordertable.git
 
 cd /.../ordertable
@@ -10,7 +12,7 @@ cd /.../ordertable
 
 
 
-///install Nodejs intoto Mac///
+# Install Nodejs intoto Mac
 
 Download the macOS Installer directly from the nodejs.org web site.
 
@@ -26,7 +28,7 @@ Using MacPorts:
 
 port install nodejs<major version>
 
-# Example
+
 port install nodejs7
 Using pkgsrc:
 
@@ -38,7 +40,7 @@ Or build manually from pkgsrc:
 cd pkgsrc/lang/nodejs && bmake install
 
 
-////Install Mysql to Mac////
+# Install Mysql to Mac
 
 The package is located inside a disk image (.dmg) file that you first need to mount by double-clicking its icon in the Finder. It should then mount the image and display its contents.
 
@@ -66,7 +68,7 @@ After a successful installation, the installer displays a window with your tempo
 
 
 
-////Database Setting////
+# Database Setting
 
 
 cd /..../ordertable/database
@@ -82,7 +84,7 @@ mysql mysql -u root -p
 
 
 
-////Website Setting////
+# Website Setting
 
 First you need to get a Google map api key free for testing
 https://developers.google.com/maps/documentation/embed/get-api-key

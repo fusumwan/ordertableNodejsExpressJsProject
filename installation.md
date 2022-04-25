@@ -6,7 +6,13 @@
 
 git clone https://github.com/fusumwan/ordertable.git
 
-cd /.../ordertable
+
+and then unzip Nodejs modules:
+
+cd /..[your directory]../ordertable/ordertable/
+
+unzip node_modules.zip
+
 
 
 
@@ -71,7 +77,7 @@ After a successful installation, the installer displays a window with your tempo
 # Database Setting
 
 
-cd /..../ordertable/database
+cd /..[your directory]../ordertable/ordertable/database
 
 mysql --host=127.0.0.1 --user=root --password=[your password] < ordertable.sql
 mysql --host=127.0.0.1 < ordertable.sql
@@ -90,14 +96,14 @@ First you need to get a Google map api key free for testing
 https://developers.google.com/maps/documentation/embed/get-api-key
 
 
-cd /.../ordertable
+cd /..[your directory]../ordertable/ordertable
 
 Update the username and password in app.js:
 
 
 var dbConnectionPool =mysql.createPool({host:'localhost',user:'root',password:'Your password',database:'ordertable'});
 
-vi /.../ordertable/public/map.html
+vi /..[your directory]../ordertable/ordertable/public/map.html
 
 Update the Google map api key in map.html
 

@@ -1,0 +1,96 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>OrderTable</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+<script src="javascripts/error.protection.js" language="javascript"></script>
+
+
+<link href="stylesheets/main.css" rel="stylesheet" type="text/css" media="all" />
+<script src="javascripts/infraslayer.js" language="javascript"></script>
+<script src="javascripts/datalayer.js" language="javascript"></script>
+<script src="javascripts/applayer.js" language="javascript"></script>
+<script src="javascripts/main.js" language="javascript"></script>
+
+
+<link href="stylesheets/result.css" rel="stylesheet" type="text/css" media="all" />
+<script src="javascripts/result.js" language="javascript"></script>
+<link href="stylesheets/CalendarControl.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="javascripts/CalendarControl.js" language="javascript"></script>
+<script type="application/x-javascript"> 
+
+
+
+
+
+</script>
+</head>
+<body>
+<!--
+
+/**************************************************
+ // Author: Sum Wan,FU
+ // Date: 7-5-2019
+ // Description: result page
+ **************************************************/
+-->
+<!-- header -->
+	<div id="header_div"></div>
+<!-- header -->
+
+
+
+<!-- content -->
+	<div class="contrary">
+		<div class="container">
+			<div class="col col1 map">
+				<a class="normal_button" href="map.html">Map</a>
+			</div>
+			<div class="col col2">
+				<h2 class="result_title">Results</h2>
+				<p id="tables_avail"></p>
+			</div>
+		</div>
+	</div>
+	<div class="contrary">
+		<div id="app" >
+			<!-- restaurant record list-->
+			<div v-for="restaurant in lists" >
+				<div class="container">
+					<div class="col col1 restaurant">
+						<img class="restaurant"  v-bind:src="restaurant.image" alt="restaurant"></img>
+					</div>
+					<div class="col col2">
+						<h2 class="result_title">{{restaurant.name}}</h2>
+						<p>{{restaurant.description}}</p>
+						<div>
+							<span  v-for="(tables, index) in restaurant.tabless">
+							<a id="time_session" onclick="ChooseTimeSession(this)" v-bind:alt="tables.tables_id" class="time" href="#">{{tables.available_time}}</a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of restaurant record list-->
+		</div>
+	</div>
+<!-- content -->
+
+
+
+
+
+
+
+<!-- footer -->
+	<div id='footer_div'><div>
+<!-- footer -->
+</body>
+</html>

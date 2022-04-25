@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>OrderTable</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+<link href="stylesheets/main.css" rel="stylesheet" type="text/css" media="all" />
+<script src="javascripts/infraslayer.js" language="javascript"></script>
+<script src="javascripts/datalayer.js" language="javascript"></script>
+<script src="javascripts/applayer.js" language="javascript"></script>
+<script src="javascripts/main.js" language="javascript"></script>
+
+
+<link href="stylesheets/login.css" rel="stylesheet" type="text/css" media="all" />
+<script src="javascripts/error.protection.js" language="javascript"></script>
+<script src="javascripts/accountinfo.js" language="javascript"></script>
+<script type="application/x-javascript"> 
+
+
+</script>
+</head>
+<body>
+
+
+<!--
+/**************************************************
+ // Author: Sum Wan,FU
+ // Date: 7-5-2019
+ // Description: account info page
+ **************************************************/
+-->
+<!-- header -->
+	<div id="header_div"></div>
+<!-- header -->
+
+<!-- content -->
+
+	<div class="contrary">
+		<div class="container">
+			<div class="col col1">
+
+
+			</div>
+			<div class="col col2">
+				<div class="page-title-header">Account Info</h1>
+
+			</div>
+			<div class="col col3">
+
+			</div>
+		</div>
+	</div>
+	<div class="contrary">
+		<div class="container">
+			<div class="col col1">
+
+
+			</div>
+			<div class="col col2">
+				<form action="/update_account">
+					<div>
+						<input id="account_id_txt" name="account_id_txt" type="hidden" value="d5565ecd-5438-45e3-a27a-1899aae97f5c">
+						<p><label class="form-label" for="first_name"><b>Personal Name</b></label><p>
+						<input id="first_name_txt" name="first_name" class="form-input margin-bottom" placeholder="First Name" type="text" value="">
+					</div>
+					
+					<div>
+						
+						<input id="last_name_txt" name="last_name" class="form-input margin-bottom" placeholder="Last Name" type="text" value="">
+					</div>
+					
+					<div>
+						<p><label class="form-label" for="email"><b>Contact Information</b></label><p>
+						<input id="email_txt" name="email" class="form-input margin-bottom" placeholder="Email" type="text" value="">
+					</div>
+
+					<div>
+						<input name="contact_number" class="form-input margin-bottom" placeholder="Phone" id="contact_number_txt" type="text" value="0481772223" onkeypress="if(event.keyCode == '13'){ }else{ return error.protection.FilterNumberSpecialCharacters(event,false); }">
+					</div>
+
+					<div>
+						<p><label class="form-label" for="password"><b>Password</b></label><p>
+						<input id="password_txt" name="password" class="form-input margin-bottom" placeholder="Password" type="password" value="">
+					</div>
+
+					<div>
+						<input id="confirm_password_txt" name="confirm_password" class="form-input margin-bottom" placeholder="Confirm Password" type="password" value="">
+					</div>
+					
+					
+					<div>
+					<label>
+						<input id="user_type_chk" type="checkbox" name="user_type" style="margin-bottom:25px" value="true">I am an administrative professional.
+					</label>
+					</div>
+					
+					<div>
+					<label>
+						<input id="rememberme" type="checkbox"  name="rememberme" style="margin-bottom:25px" value="true">Remember me
+					</label>
+					</div>
+					<div>
+					<a class="normal_button red_button" href="#" id="update_btn">Update Account</a>
+					</div>
+				</form>
+			</div>
+			<div class="col col3">
+
+			</div>
+		</div>
+	</div>
+	<div class="contrary">
+		<div class="container">
+			<div class="col col1">
+
+			</div>
+			<div class="col col2">
+				<hr>
+				<p>If you are administrative professional, please click via link to restaurant management page </p>
+				<p><a id="res_link" href="restaurantManage.html">Restaurant Manage</a></p>
+			</div>
+			<div class="col col3">
+
+			</div>
+		</div>
+	</div>
+<!-- content -->
+
+
+
+
+<!-- footer -->
+	<div id='footer_div'><div>
+<!-- footer -->
+
+</html>

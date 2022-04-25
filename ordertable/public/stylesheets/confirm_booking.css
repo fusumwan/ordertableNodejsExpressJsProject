@@ -1,0 +1,531 @@
+   body > *{
+     margin-left: auto;
+     margin-right: auto
+   }
+
+
+
+   
+
+      .Announce {
+	color:black;
+      }
+      .confirmBooking{
+  text-align:center;
+  height:40%;
+  border: 1px solid black;
+  margin-left:0;
+  margin-right:0;
+  margin-top:2.5%;
+  margin-bottom:5%;
+  background-color:#f5f5f5;
+  box-sizing:border-box;
+  overflow:auto
+      }
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+     .InforBooking {
+  display:inline-block;
+  width:70%;
+  height:100px;
+  border:1px solid;
+  position:relative;
+  border-radius:5px;
+  margin-top:1%;
+  margin-bottom:1%;
+  background-color:white;
+  margin-left:0;
+  margin-right:0;
+  box-sizing:border-box;
+     }
+     .icon{
+  float:left;
+  height:100%;
+  width:10%;
+  padding:10px;
+  text-align:center;
+  box-sizing:border-box;
+     }
+     .icon-size {
+  font-size:1.5em;
+     }
+     .text-area {
+  float:left;
+  height:100%;
+  overflow:hidden;
+  padding:5px;
+  width:70%;
+  box-sizing:border-box;
+     }
+    .ButtonArea{
+  float:left;
+  height:100%;
+  width:20%;
+    }
+    .EditButton {
+  float:left;
+   width:10%;
+  height:40px;
+  position:absolute;
+  right:5px;
+  bottom:5px;
+  background-color:#5e1945;
+  color:white;
+  border:1px solid black;
+  font-size:0.75em;
+    }  
+    .EditButton:hover {
+  background-color:white;
+  color:#5e1945; 
+     }
+
+	
+
+
+	 .image {
+	height:100%;
+	width:20%;
+	padding:5px;
+	display:inline-block;
+	float:left;overflow:hidden
+     }
+
+	.Infor {
+	
+	border-collapse: collapse;
+	height:100%;
+	width: 80%;
+	float:left;
+	
+	display:inline-block;
+	margin-bottom:0
+     }
+
+
+	.InforBlock {
+	
+	padding-top:10px;
+	float: left;
+	height:100%;
+	width:25%;
+	
+	display:inline-block
+     }
+	.containerDropdown {
+	display:inline-block;
+	width:70%;
+  	height:100px;
+  	position:relative;
+  	border-radius:5px;
+  	margin-top:1%;
+  	margin-bottom:1%;
+  	margin-left:0;
+  	margin-right:0;
+  	box-sizing:border-box;
+	
+     }
+
+      
+
+
+    .countDown{
+  
+  margin:0;
+  height:40px;
+  width:70%;
+  border:1px solid black;
+  padding:0px;
+  position:relative;
+  left:12%;
+  background-color:rgba(96,178,208,0.2)
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .LogIn{
+    }
+    .LogInForm {
+  width:80%;
+  padding:0;
+  display:inline-block;
+  background-color:white;
+  margin:0
+    }
+    .ColumnInput {
+  display:inline-block;
+  float:left;
+  width:48%;
+  box-sizing:border-box;
+    }
+    .labelInput {
+  display:block;
+  margin:5px;
+    }
+    .textInput {
+  
+  margin:5px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+    }
+
+   
+    .containerLogIn {
+    padding:16px;
+    overflow:hidden;
+    }
+    
+      
+      
+      
+    input[type=text] {
+        width: 100%;
+        margin: 8px 0;
+  
+        box-sizing: border-box;
+    }
+      
+    
+
+     .BookButton {
+  width:100%;
+  padding:20px;
+  background-color:#da3743;
+  color:white;
+    }  
+    .BookButton:hover {
+  background-color:#b8222d;
+  color:white; 
+     }
+     .image-container {
+  margin-top:20px;
+  margin-bottom:20px;
+  text-align: center;
+     }
+     .Avatar{
+  vertical-align: middle;
+  width: 12%;
+  height: 20%;
+  border-radius: 50%;
+     }
+
+
+
+
+
+
+
+
+
+
+
+      .containerRating {
+  overflow:auto;
+  display:inline-block;
+  width:90%;
+  text-align:center;
+  margin:10px;
+  padding:0;
+      }
+      
+
+.rating {
+  
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align:center;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  font-size:30px;
+  color: #f2b01e;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
+
+
+
+
+
+
+
+#reviewDescription {
+  text-align:center;
+  width:100%;
+}
+
+
+
+.scorecard:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.side {
+  float: left;
+  width: 15%;
+  margin-top:5px;
+}
+
+.middle {
+  
+  float: left;
+  width: 70%;
+}
+
+
+.right {
+  width:15%;
+  text-align: right;
+}
+
+
+
+
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {height: 17px; background-color: #4CAF50;}
+.bar-4 {height: 17px; background-color: #2196F3;}
+.bar-3 { height: 17px; background-color: #00bcd4;}
+.bar-2 {height: 17px; background-color: #ff9800;}
+.bar-1 {height: 17px; background-color: #f44336;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+      
+      
+
+      .confirmBooking {
+	height:500px;
+      }
+      .image-container {
+  margin:10px;
+      }
+      a.mobileDropdown {
+  display: block;
+      }
+      .LogInForm {
+  height:300px;
+  box-sizing:border-box;
+       }
+      .textInput {
+  height:30px;
+      }
+      .BookButton {
+  padding:15px;
+      }
+      input[type=text] {
+        font-size:10px;
+  padding: 8px 0;
+      }
+      .EditButton {
+  width:15%;
+      }
+      
+      .icon {
+  padding:5px;
+      }
+      .icon-size {
+  font-size:2em;
+      }
+      
+      .headingBar {
+  height:40px;
+      }
+      .starSize {
+  font-size:0.5em;
+      }
+      .rate label {
+  position:relative;
+  display:inline-block;
+      }
+      .rate:not(:checked) > label {
+  font-size:20px;
+      }
+
+
+    }
+    @media (max-width: 1043px){
+      .confirmBooking{
+	font-size:0.8em;
+      }
+    }
+
+    @media (max-width: 590px){
+      .confirmBooking{
+	font-size:0.8em;
+      }
+      .InforBlock {font-size:0.8em;}
+      .image-container {
+	margin:5px;
+	height:20%;
+      }
+      .Avatar {
+	height:100%;
+	width:30%
+      }
+    }
+
+    @media (max-width: 485px) {
+      .rating > span {
+	font-size:25px;
+      }
+      .Announce {
+	font-size:1em;
+      }
+      .text-area {
+	font-size:0.8em;
+      }
+      .contrary {
+	margin-top:5px;
+      }
+      .countDown {
+  height:50px;
+      }
+      .confirmBooking{
+	font-size:0.7em;
+      }
+      .InforBooking {
+	height:40px
+      }
+      .InforBlock {
+	padding-top:5px;
+	font-size:0.6em;
+      }
+      .labelInput {
+	font-size:0.8em;
+      }
+      .containerLogIn {
+	padding-bottom:0;
+      }
+      .rate label {
+	font-size:15px;
+      }
+      .container {
+	padding:0px;
+      }
+      .contrary {
+	margin-bottom:5px;
+      }
+      .footer .footer_container {
+	height:100px;
+	line-height:100px;
+      }
+    }
+    @media (max-width: 375px) {
+      .labelInput {
+	font-size:0.8em;
+      }
+      .BookButton {
+	padding:5px
+      }
+      .LogInForm {
+	height:250px
+      }
+
+    }
+    @media (max-width: 345px) {
+      .confirmBooking {
+	font-size:0.6em;
+      }
+    }
+    @media (min-width: 900px){
+      .icon-size {
+  font-size:2.2em;
+      }
+      .icon {
+  text-align:left;
+      }
+    }
+
+    
+
+   
+
+
+
+
+
+
+

@@ -1,0 +1,207 @@
+/**************************************************
+ // Author: Sum Wan,FU
+ // Date: 7-5-2019
+ // Description: Css file for map.html
+ **************************************************/
+
+
+.search-container {
+	height: 200px;
+}
+
+.info {
+	text-align: center;
+	margin: 2em 0em;
+}
+
+/*-- content --*/
+.col1 {
+	width: 43.33333333%;
+}
+
+.col2 {
+	width: 56.66666666%;
+}
+
+.col3 {
+    width: 33.33333333%;
+}
+
+.col4 {
+    width: 66.66666666%;
+}
+
+a.time {
+	background: #D94748;
+	color:#fff;
+	text-decoration:none;
+	font-size:16px;
+	font-weight:250;
+	padding:0.2em 1.2em;
+	display: inline-block;
+	text-decoration: none;
+	text-shadow: 0 1px #FF0000;
+	border-radius:3px;
+	text-align: center;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+	-msborder-radius:3px;
+	position:relative;
+}
+
+a.time:hover {
+	background:#5094F2;
+}
+
+
+.restaurant {
+	text-align: center;
+
+}
+
+.detail {
+	text-align: center;
+}
+
+
+
+.restaurant img{
+	width: 83px;
+	height: 83px;
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+}
+
+.map{
+	text-align: center;
+}
+.map img{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	margin: 10px 10px 10px 10px;
+}
+.result_title{
+	margin-top: 5px;
+	color: #000;
+}
+
+.mapcav{
+	height:500px;width:100%;margin:0 0 0 0;
+}
+/*-- content --*/
+
+
+/*--responsive design--*/
+@media (max-width:1024px){
+	.restaurant img{
+		width: 183px;
+		height: 183px;
+	}
+	.col1 {
+		width: 100%;
+	}
+
+	.col2 {
+		width: 0%;
+	}
+	.mapcav{
+		height:400px;width:100%;margin:0 0 0 0;
+	}
+}
+
+/*--responsive design--*/
+@media (max-width:768px){
+	.banner {
+		min-height: 200px;
+	}
+	.search-container {
+		height: 200px;
+	}
+	.restaurant img{
+		width: 183px;
+		height: 183px;
+	}
+	.col1 {
+		width: 100%;
+	}
+
+	.col2 {
+		width: 0%;
+	}
+	.mapcav{
+		height:300px;width:100%;margin:0 0 0 0;
+	}
+}
+
+
+@media (max-width:640px){
+	.banner {
+		min-height: 250px;
+	}
+	.search-container {
+		height: 250px;
+	}
+	.restaurant img{
+		width: 183px;
+		height: 183px;
+	}
+	.col1 {
+		width: 100%;
+	}
+
+	.col2 {
+		width: 0%;
+	}
+	.col3 {
+    	width: 100%;
+	}
+	.col4 {
+	    width: 100%;
+	}
+	.mapcav{
+		height:300px;width:100%;margin:0 0 0 0;
+	}
+	.form-input{
+		width: 100%;
+	}
+	.form-select{
+		width: 100%;
+	}
+}
+
+@media (max-width:320px){
+	.banner {
+		min-height: 250px;
+	}
+	.search-container {
+		height: 250px;
+	}
+	.restaurant img{
+		width: 183px;
+		height: 183px;
+	}
+	.col1 {
+		width: 100%;
+	}
+
+	.col2 {
+		width: 0%;
+	}
+	.col3 {
+    	width: 100%;
+	}
+	.col4 {
+	    width: 100%;
+	}
+	.mapcav{
+		height:300px;width:100%;margin:0 0 0 0;
+	}
+	.form-input{
+		width: 100%;
+	}
+	.form-select{
+		width: 100%;
+	}
+}

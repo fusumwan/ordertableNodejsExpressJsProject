@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>OrderTable</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="stylesheets/main.css" rel="stylesheet" type="text/css" media="all" />
+<script src="javascripts/infraslayer.js" language="javascript"></script>
+<script src="javascripts/datalayer.js" language="javascript"></script>
+<script src="javascripts/applayer.js" language="javascript"></script>
+<script src="javascripts/main.js" language="javascript"></script>
+<script src="javascripts/error.protection.js" language="javascript"></script>
+
+
+
+
+   <link href="stylesheets/confirm_booking.css" rel="stylesheet" type="text/css" media="all" />
+<script src="javascripts/confirm_booking.js" language="javascript"></script>
+
+  </head>
+  
+  <body style="overflow:auto;width=100%;height=100%;margin:0;text-align:center" onunload="removeSession()"> 
+<!-- header -->
+  <div id="header_div"></div>
+<!-- header -->
+
+<!-- content -->
+  <div class="contrary">
+    <div class="container">
+
+
+      <div class="col">
+		<div style="text-align:center">
+                  <h1 class="Announce">You're almost done!</h1>
+                </div>
+                <div class='confirmBooking'>
+
+
+            <!-- Edit Date Information -->
+                   <div id="showBookingChoice" class="InforBooking">
+                     <div class="image">
+                 	<img src="images/Food.jpg" alt="Food" style="height:100%;width:100%;border-radius:5px">
+               	     </div>
+                     
+                     <div class="Infor">
+                 	<div class ="InforBlock">
+			    <h3 style="color:black">Restaurant</h3>
+			</div>
+			<div class ="InforBlock">
+			    <h3 style="color:black">Guest</h3>
+			</div>
+			
+			<div class ="InforBlock">
+			    <h3 style="color:black">Date</h3>
+			</div>
+			<div class ="InforBlock">
+			    <h3 style="color:black">Time</h3>
+			</div>
+			
+               	     </div>
+               
+                   </div>
+		
+          
+               
+                   
+                   <hr>
+
+
+
+
+
+            <!-- CountDown -->
+                  <div id= 'countdown' class="countDown">
+              We are holding this table for you for <span id='timer'></span> minutes</div>
+
+
+                   
+              
+
+
+            <!-- Log In/Sign In -->
+                  <div class="LogIn">
+                    <p >
+                     <a href='#SignIn'>Sign In</a> or <a href='#LogIn'>Log In </a> to Finish Booking
+                    </p>
+                    <div class="LogInForm">
+                    
+                      <div class="image-container"><img src="images/avatar.png" alt="Avatar" class="Avatar"></div>
+                      <form action='/action.php' >
+                        <div class='containerLogIn' >
+                    <div class="ColumnInput">
+                            <label  for='User' class="labelInput" ><b>User Name</b></label>
+                            <input id="Name" type='text' placeholder='Enter User Name' class="textInput"  required>
+                            <label for='Email' class="labelInput"><b>Email</b></label>
+                            <input id="Email" type='text' placeholder='Enter your email' class="textInput" required>
+                    </div>
+                    <div class="ColumnInput" style="float:right">
+                            <label for='Password' class="labelInput"><b>Password</b></label>
+                            <input id="Password" type='password' placeholder='Enter your password' class="textInput" required>
+                            <label for='Phone' class="labelInput"><b>Phone Number</b></label>
+                            <input id="Phone" type='text' placeholder='Enter your phone number' class="textInput" required>
+                    </div>
+                          <button id="BookButton" type='button' class="BookButton">
+                              Book now!
+                          </button>
+                        </div>
+                    
+                    </div>
+                  </div>  
+
+            <!-- Star rating -->
+                  <div class="containerRating">
+                    <h3 id="review" style="color:black"> Please Leave Your Review For The Website</h3>
+                    <div class="rating">
+                      <span onclick="showRate5()">&#9734;</span>
+                      <span onclick="showRate4()">&#9734;</span>
+                      <span onclick="showRate3()">&#9734;</span>
+                      <span onclick="showRate2()">&#9734;</span>
+                      <span onclick="showRate1()">&#9734;</span>
+                    </div>
+                    <div id="reviewDescription" style="display:none">
+                      <h2 style="color:black">User Rating</h2>
+                      <div id="reviewAverage">Review Result</div>
+                    </div>
+                    <div class="scorecard" style="display:none">
+
+
+                      <div class="side">
+                        <div>5 star</div>
+                      </div>
+                      <div class="middle">
+                        <div class="bar-container">
+                          <div class="bar-5"></div>
+                        </div>
+                      </div>
+                      <div class="side right">
+                        <div class="numberRate">150</div>
+                      </div>
+
+
+                      <div class="side">
+                        <div>4 star</div>
+                      </div>
+                      <div class="middle">
+                        <div class="bar-container">
+                          <div class="bar-4"></div>
+                        </div>
+                      </div>
+                      <div class="side right">
+                        <div class="numberRate">63</div>
+                      </div>
+
+
+                      <div class="side">
+                        <div>3 star</div>
+                      </div>
+                      <div class="middle">
+                        <div class="bar-container">
+                          <div class="bar-3"></div>
+                        </div>
+                      </div>
+                      <div class="side right">
+                        <div class="numberRate">15</div>
+                      </div>
+
+
+                      <div class="side">
+                        <div>2 star</div>
+                      </div>
+                      <div class="middle">
+                        <div class="bar-container">
+                          <div class="bar-2"></div>
+                        </div>
+                      </div>
+                      <div class="side right">
+                        <div class="numberRate">6</div>
+                      </div>
+
+
+                      <div class="side">
+                        <div>1 star</div>
+                      </div>
+                      <div class="middle">
+                        <div class="bar-container">
+                          <div class="bar-1"></div>
+                        </div>
+                      </div>
+                      <div class="side right">
+                        <div class="numberRate">20</div>
+                      </div>
+                    </div>
+
+                  </div>
+                  
+                  </form>
+                  </div>
+
+
+                  <script>
+                    function PostRate() {
+                        for (i = 0; i < document.getElementsByName('rate').length; i++) {
+                                if(document.getElementsByName('rate')[i].checked == true) {
+                                    var ratingValue = document.getElementsByName('rate')[i].value;
+                                    break;
+                                }
+                        }
+                        alert(ratingValue);
+                    }   
+                  
+                  
+              
+
+              
+
+
+
+
+
+
+              document.getElementById('timer').innerHTML =00 + ":" + 09;
+              startTimer();
+
+              function startTimer() { 
+                var child=document.getElementById('timer');
+                var presentTime = child.innerHTML;
+                var timeArray = presentTime.split(/[:]+/);
+                var m = timeArray[0];
+                var s = checkSecond((timeArray[1] - 1));
+                if(s==59){m=m-1}
+                if(m<0){
+                countdown=document.getElementById('countdown');
+                countdown.removeChild(child);
+                countdown.innerHTML="You can still try to complete your reservation, but this table may no longer be available.";
+                countdown.style.backgroundColor='rgba('+218+','+ 55+','+ 67+','+ 0.2+')';
+
+                var PageSession=App.BusinessIntelligence.PageSession();
+                var booking_id=PageSession.confirm_booking.booking.booking_id;
+                var fakeBooking=db.entity.booking.retrieve(booking_id);
+                
+                var reserved={
+                  "booking_id":booking_id,
+                  "account_id":"Not yet",
+                  "tables_id":fakeBooking[0].tables_id,
+                  "enable":0,
+                  "booking_time":fakeBooking[0].booking_time,
+                  "reserved_time":fakeBooking[0].reserved_time
+
+                };
+                
+                db.entity.booking.update(reserved);
+              }
+              
+                document.getElementById('timer').innerHTML =
+                  m + ":" + s;
+                setTimeout(startTimer, 1000);
+              }
+
+              function checkSecond(sec) {
+                if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+                if (sec < 0) {sec = "59"};
+                return sec;
+              }
+
+
+
+
+                  </script>
+
+
+      </div>
+    </div>
+  </div>
+<!-- content -->
+
+
+<!-- footer -->
+  <div id='footer_div'><div>
+<!-- footer -->
+
+
+  </body>
+</html>

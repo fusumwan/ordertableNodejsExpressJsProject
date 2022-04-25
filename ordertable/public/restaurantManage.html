@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>OrderTable</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+<link href="stylesheets/CalendarControl.css" rel="stylesheet" type="text/css">
+<script src="javascripts/CalendarControl.js" language="javascript"></script>
+<link href="stylesheets/main.css" rel="stylesheet" type="text/css" media="all" />
+<script src="javascripts/infraslayer.js" language="javascript"></script>
+<script src="javascripts/datalayer.js" language="javascript"></script>
+<script src="javascripts/applayer.js" language="javascript"></script>
+<script src="javascripts/main.js" language="javascript"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="javascripts/error.protection.js" language="javascript"></script>
+<link href="stylesheets/restaurantManage.css" rel="stylesheet" type="text/css" media="all" />
+<script src="javascripts/restaurantManage.js" language="javascript"></script>
+<script src="javascripts/restaurant_list.js" language="javascript"></script>
+<script src="javascripts/restaurant_modify.js" language="javascript"></script>
+<script type="application/x-javascript"> 
+
+</script>
+</head>
+<body>
+<!--
+
+/**************************************************
+ // Author: Sum Wan,FU
+ // Date: 7-6-2019
+ // Description: Restaurant Manage page
+ **************************************************/
+-->
+<!-- header -->
+	<div id="header_div"></div>
+<!-- header -->
+
+
+<!-- content -->
+	<div class="contrary">
+		<div class="container">
+			<div class="col col1">
+
+
+			</div>
+			<div class="col col2">
+				<div class="page-title-header">Resturant Management</h1>
+
+			</div>
+			<div class="col col3">
+
+			</div>
+		</div>
+	</div>
+	<div class="contrary">
+		<div class="container">
+			<div class="col col1">
+
+			</div>
+			<div class="col col2">
+				<a id="show_all_res_btn" class="normal_button red_button" href="#" >List Restuarant</a>
+				<a id="show_add_update_res_btn" class="normal_button red_button" href="#" >Add Restaurant</a>
+			</div>
+			<div class="col col3">
+
+			</div>
+		</div>
+	</div>
+
+
+	
+
+	<div id="list_res" class="contrary">
+		<div class="container">
+			<div class="col col1">
+				
+
+			</div>
+			<div class="col col2">
+				<!-- restaurant record list-->
+				<div v-for="restaurant in lists" >
+					<div class="container">
+						<div class="col col4 restaurant">
+							<img class="restaurant" v-bind:src="restaurant.image" alt="restaurant1"></img>
+							<div>
+								<a id="edit_btn" v-bind:alt="restaurant.restaurant_id" class="modify" onclick="EditClick(this)" href="#"> Edit</a>
+							</div>
+							<div>
+								<a id="delete_btn" v-bind:alt="restaurant.restaurant_id" class="modify" onclick="DeleteClick(this)" href="#"> Delete </a>
+							</div>
+							
+						</div>
+						<div class="col col5">
+							<h2 class="result_title">{{restaurant.name}}</h2>
+
+							<p>{{restaurant.description}}</p>
+							<div>
+								<span  v-for="(tables, index) in restaurant.tabless">
+							<a id="time_session" onclick="error.protection.preventDefault(event)" v-bind:alt="tables.tables_id" class="time" href="#">{{tables.available_time}}</a>
+							</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+					<!-- end of restaurant record list-->
+			</div>
+			<div class="col col3">
+
+			</div>
+		</div>
+	</div>
+
+
+	
+
+	<div id="add_update_resturant" class="contrary"  style="display:none">
+		<div class="container">
+			<div class="col col1">
+			</div>
+			<div class="col col2">
+				<form id="ResForm" action="/upload" method="post" enctype="multipart/form-data">
+					<div>
+						<p><label class="form-label" for="file"><b>Resturant Image</b></label><p>
+						<input id="file" type="file" name="file">
+						<input id="resturant_id_txt" type="hidden" name="resturant_id">
+					</div>
+
+					<div>
+						<p><label class="form-label" for="name"><b>Resturant Name</b></label><p>
+						<input id="name_txt" name="name" class="form-input margin-bottom" placeholder="Resturant Name" type="text">
+					</div>
+
+					<div>
+						<p><label class="form-label" for="location"><b>Location</b></label><p>
+						<input id="location_txt" name="location" class="form-input margin-bottom" placeholder="Location" type="text">
+					</div>
+					
+					<div>
+						<input id="longitude_txt" name="longitude" class="form-input margin-bottom" placeholder="Longitude" type="text">
+					</div>
+
+					<div>
+						<input id="latitude_txt" name="latitude" class="form-input margin-bottom" placeholder="Latitude" type="text">
+					</div>
+
+					<div>
+						<input id="description_txt" name="description" class="form-input margin-bottom" placeholder="Description" type="text">
+					</div>
+					
+					<div>
+						<p><label class="form-label" for="contact_number"><b>Phone</b></label><p>
+						<input id='contact_number_txt' name="contact_number" class="form-input margin-bottom" placeholder="Phone"  type="text" onkeypress="if(event.keyCode == '13'){ }else{ return error.protection.FilterNumberSpecialCharacters(event,false); }">
+					</div>
+
+					<div>
+						<p><label class="form-label" for="start_date"><b>Time Period</b></label><p>
+						<p>
+						<input id='start_period_txt' name="start_period" class="form-input margin-bottom" placeholder="Start Period" onfocus="ShowCalendar(this,'');" type="text">
+						</p>
+						<p>
+						<input id='end_period_txt' name="end_period"  class="form-input margin-bottom" placeholder="End Period" onfocus="ShowCalendar(this,'');" type="text">
+						</p>
+					</div>
+
+					<div>
+					<hr>
+					</div>
+					
+					<div>
+					<a id="update_restaurant_btn" class="normal_button red_button" href="#" >Add / Update Restaurant</a>
+					</div>
+					
+
+
+
+					
+
+				</form>
+			</div>
+			<div class="col col3">
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!-- content -->
+
+
+
+<!-- footer -->
+	<div id='footer_div'><div>
+<!-- footer -->
+
+</html>

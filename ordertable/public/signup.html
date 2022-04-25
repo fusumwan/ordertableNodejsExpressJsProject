@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>OrderTable</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+<link href="stylesheets/main.css" rel="stylesheet" type="text/css" media="all" />
+<script src="javascripts/infraslayer.js" language="javascript"></script>
+<script src="javascripts/datalayer.js" language="javascript"></script>
+<script src="javascripts/applayer.js" language="javascript"></script>
+<script src="javascripts/main.js" language="javascript"></script>
+
+<link href="stylesheets/login.css" rel="stylesheet" type="text/css" media="all" />
+<script src="javascripts/error.protection.js" language="javascript"></script>
+<script src="javascripts/signup.js" language="javascript"></script>
+<script type="application/x-javascript"> 
+
+
+</script>
+</head>
+<body>
+
+<!--
+/**************************************************
+ // Author: Sum Wan,FU
+ // Date: 7-5-2019
+ // Description: sign up page
+ **************************************************/
+-->
+<!-- header -->
+	<div id="header_div"></div>
+<!-- header -->
+
+<!-- content -->
+	<div class="contrary">
+		<div class="container">
+			<div class="col col1">
+
+
+			</div>
+			<div class="col col2">
+				<div class="page-title-header">Sign Up</h1>
+
+			</div>
+			<div class="col col3">
+
+			</div>
+		</div>
+	</div>
+	<div class="contrary">
+		<div class="container">
+			<div class="col col1">
+
+
+			</div>
+			<div class="col col2">
+				<form action="/sign_up">
+					<div>
+						<p><label class="form-label" for="first_name"><b>Personal Name</b></label><p>
+						<input id="first_name_txt" name="first_name" class="form-input margin-bottom" placeholder="First Name" type="text">
+					</div>
+					
+					<div>
+						
+						<input id="last_name_txt" name="last_name" class="form-input margin-bottom" placeholder="Last Name" type="text">
+					</div>
+					
+					<div>
+						<p><label class="form-label" for="email"><b>Contact Information</b></label><p>
+						<input id="email_txt" name="email" class="form-input margin-bottom" placeholder="Email" type="text">
+					</div>
+
+					<div>
+						
+						<input id="contact_number_txt" name="contact_number" class="form-input margin-bottom" placeholder="Phone" type="text" onkeypress="if(event.keyCode == '13'){ }else{ return error.protection.FilterNumberSpecialCharacters(event,false); }">
+					</div>
+
+					<div>
+						<p><label class="form-label" for="password"><b>Password</b></label><p>
+						<input id="password_txt" name="password" class="form-input margin-bottom" placeholder="Password" onfocus="showCalendarControl(this,'');" type="password">
+					</div>
+
+					<div>
+						<input id="confirm_password_txt" name="confirm_password" class="form-input margin-bottom" placeholder="Confirm Password"  type="password">
+					</div>
+					
+
+					<div>
+					<label>
+						<input id="user_type_chk" type="checkbox" name="rememberme" style="margin-bottom:25px" value="true">I am an administrative professional.
+					</label>
+					</div>
+					
+					
+					<div>
+					<a class="normal_button red_button" href="/sign_up" id="signup_btn">Sign Up</a>
+					</div>
+				</form>
+			</div>
+			<div class="col col3">
+
+			</div>
+		</div>
+	</div>
+
+	<div class="contrary">
+		<div class="container">
+			<div class="col col1">
+
+
+			</div>
+			<div class="col col2">
+				<hr>
+				<p>Already have an account in the OrderTable, Inc.?
+</p>
+				<p><a href="Login.html">Login</a></p>
+			</div>
+			<div class="col col3">
+
+			</div>
+		</div>
+	</div>
+
+<!-- content -->
+
+
+<!-- footer -->
+	<div id='footer_div'><div>
+<!-- footer -->
+
+</html>

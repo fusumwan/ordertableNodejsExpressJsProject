@@ -1,0 +1,192 @@
+/**************************************************
+ // Author: Sum Wan,FU
+ // Date: 7-5-2019
+ // Description: Css file for result.html
+ **************************************************/
+
+
+/*-- content --*/
+.col1 {
+    width: 10.00000000%;
+}
+.col2 {
+    width: 86.33333333%;
+}
+.col3 {
+	width: 13.33333333%;
+}
+
+.col4 {
+    width: 33.33333333%;
+}
+.col5 {
+	width: 66.66666666%;
+}
+
+
+.page-title-header{
+	font-size: 3.25rem;
+	font-weight: 400;
+	font-color: #666;
+	line-height: 1.2rem;
+}
+
+a.red_button {
+	background: #da3743;
+	color:#fff;
+}
+.form-input{
+	width:500px;
+}
+.forgot{
+	
+}
+
+
+a.time {
+	background: #D94748;
+	color:#fff;
+	text-decoration:none;
+	font-size:16px;
+	font-weight:250;
+	padding:0.2em 1.2em;
+	display: inline-block;
+	text-decoration: none;
+	text-shadow: 0 1px #FF0000;
+	border-radius:3px;
+	text-align: center;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+	-msborder-radius:3px;
+	position:relative;
+}
+
+a.time:hover {
+	background:#5094F2;
+}
+
+
+
+a.modify {
+	background: #5094F2;
+	color:#fff;
+	text-decoration:none;
+	font-size:16px;
+	font-weight:200;
+	padding:0.15em 1.0em;
+	display: inline-block;
+	text-decoration: none;
+	text-shadow: 0 1px #FF0000;
+	border-radius:2px;
+	text-align: center;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	-o-border-radius:2px;
+	-msborder-radius:2px;
+	position:relative;
+}
+
+a.modify:hover {
+	background:#5094F2;
+}
+
+
+.result_title{
+	color:#000;
+}
+
+.restaurant {
+	text-align: center;
+
+}
+
+.detail {
+	text-align: center;
+}
+
+
+
+.restaurant img{
+	width: 83px;
+	height: 83px;
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+}
+
+/*-- content --*/
+
+
+/*--responsive design--*/
+@media (max-width:1024px){
+
+
+}
+
+/*--responsive design--*/
+@media (max-width:768px){
+	
+	.col1 {
+		width: 0%;
+	}
+	.col2 {
+	    width: 100%;
+	}
+	.col3 {
+		width: 0%;
+	}
+	.form-input{
+		width:100%;
+	}
+	.form-select{
+		width:100%;
+	}
+	a.red_button {
+		width:100%;
+	}
+}
+
+
+@media (max-width:640px){
+	.col1 {
+		width: 0%;
+	}
+	.col2 {
+	    width: 100%;
+	}
+	.col3 {
+		width: 0%;
+	}
+	.form-input{
+		width:100%;
+	}
+	.form-select{
+		width:100%;
+	}
+	a.red_button {
+		width:100%;
+	}
+}
+
+@media (max-width:320px){
+	.col1 {
+		width: 0%;
+	}
+	.col2 {
+	    width: 100%;
+	}
+	.col3 {
+		width: 0%;
+	}
+	.form-input{
+		width:100%;
+	}
+	.form-select{
+		width:100%;
+	}
+	a.red_button {
+		width:100%;
+	}
+}
+
+}

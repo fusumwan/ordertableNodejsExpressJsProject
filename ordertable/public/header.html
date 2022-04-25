@@ -1,0 +1,61 @@
+﻿ <!--
+/**************************************************
+ // Author: Sum Wan,FU
+ // Date: 27-5-2019
+ // Description: header include (banner, nav, search box). This page is for partially loading
+ **************************************************/
+-->
+
+<!-- header -->
+	<div id="banner" class="banner banner_large">
+		<div class="header">
+			<!-- container-for-Head-Nav -->
+			<div class="container">
+				<div class="logo">
+					<a href="Index.html"><img src="images/logo.png" class="img-responsive" alt=""  /></a>
+				</div>
+				<!-- script-for-nav -->
+				<div class="head-nav">
+						<span class="menu"> </span>
+						<ul>
+							<li id="home_li" ><a href="index.html">Home</a></li>
+							<li id="login_li" ><a href="login.html">Login</a></li>
+							<li id="logout_li" style="display:none" ><a href="#">Logout</a></li>
+							<li id="sign_up_li" ><a href="signup.html">Sign Up</a></li>
+							<li id="account_info_li" ><a href="accountInfo.html">Account Info</a></li>
+							<li id="manage_booking_li" ><a href="manageBooking.html">Manage Bookings</a></li>
+						</ul>
+						<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"> </div>
+			</div> 
+		</div>
+		<!-- end of container-for-Head-Nav -->
+		<!-- container-search -->
+		<div id="search-container"  class="container">
+			<div class="search-container" >
+				<article> 
+				<form>
+					<div class="banner-info">
+					<div class="col info">
+						<h1 id="search-title" class="search-title">Find your restaurant for ordering table</h1>
+						<input id="reserve_date_txt" name="reserve_date" class="form-input margin-bottom search-container-input" placeholder="Enter reserve date*" onfocus="ShowCalendar(this,'');" type="text">
+						<select id="person_sel" name="SelectPerson" class="form-select search-container-select" aria-label="party size">
+							<option value="2">2 people</option>
+							<option value="4">4 people</option>
+							<option value="6">6 people</option>
+							<option value="8">8 people</option>
+							<option value="10">10 people</option>
+							<option value="12">12 people</option>
+						</select>
+						<a id="search_btn" class="normal_button" href="#">Search</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</form>
+			</article>
+			</div>
+		</div>
+		<!-- end of container-search -->
+	</div>
+<!-- header -->

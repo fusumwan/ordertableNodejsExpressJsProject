@@ -18,7 +18,7 @@ unzip node_modules.zip
 
 
 
-# Install Nodejs intoto Mac
+# Install Nodejs into Mac
 
 Download the macOS Installer directly from the nodejs.org web site.
 
